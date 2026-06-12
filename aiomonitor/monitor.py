@@ -569,7 +569,7 @@ class Monitor:
             webui_runner,
             str(self._host),
             self._webui_port,
-            reuse_port=True,
+            reuse_port=False,
         )
         await webui_site.start()
         telnet_server.start()
